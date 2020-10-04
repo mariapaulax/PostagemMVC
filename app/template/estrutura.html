@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Postagem</title>
+    
+    <style type="text/css">
+           <style type="text/css">
+    *{
+        margin: 0; 
+        padding: 0;
+    }
+    body{
+        background-color:#6495ED;
+    }
+    #corpo{
+        width:1000px; 
+        background-color: white; 
+        margin:0 auto; 
+        border-left:2px solid #ccc ; 
+        border-right:2px solid #ccc ;
+    }
+    #topo{
+        padding: 20px 25px;
+        border-bottom: 2px solid #ccc;
+    }
+    #topo a{
+        color: #333; 
+        text-decoration: none; 
+        font: 20px Arial; 
+        
+    }
+    #topo a:hover{
+        text-decoration: underline;
+
+    }
+    .flutacao-dir{
+        float:right;
+    }
+    #conteudo{
+        background-color: #fff;
+        padding: 20px 25px;
+        
+    }
+    #conteudo h1{
+        font:24px Arial;
+        color:#6495ED;
+        margin-bottom:20px ;
+        text-align: center;
+    }
+
+    #conteudo table th{
+        background: #ffc;
+    }
+    #conteudo article{
+        margin-bottom: 20px;
+
+    }
+    article h2{
+        margin-bottom: 7px;
+    }
+    article h2 a{
+        font: arial 22px; 
+        color: #333;
+        text-decoration: none;
+        
+    }
+    article h2 a:hover{
+         text-decoration: underline;
+         color:teal;
+    }
+    article p{
+        font: Arial 16px;
+        color:#333;
+        padding-left:2px; ;
+    }
+
+        </style>
+</head>
+<body>
+    
+    <div id="corpo">
+       <!-- Início do menu-->
+        <div id="topo">
+            <header>
+                <nav>
+                    <a href="http://127.0.0.1/ProjetoMvc/">Home</a>  |
+                    <a href="http://127.0.0.1/ProjetoMvc/?pagina=sobre">Sobre</a>
+                    <a class="flutacao-dir" href="http://127.0.0.1/ProjetoMvc/?pagina=admin&metodo=index">Admin</a>
+                </nav>
+            </header>
+        </div>
+        <!--Fim do menu-->
+        <div id="conteudo">
+            {{area_dinamica}}
+        </div>
+    </div>
+</body>
+</html>
